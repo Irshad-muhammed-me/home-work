@@ -1,0 +1,23 @@
+h4{
+    background-color: brown;
+    color: cadetblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    padding-left: 500px;
+    margin: 40px;
+}
+h6{
+    background-color: darkgray;
+    color: blueviolet;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 300px;
+    margin: 40px;
+}
+p{
+    font-size: medium;
+    color: darkturquoise;
+    background-color: brown;
+    padding-left: 200px;
+    margin: 40px;
+}
