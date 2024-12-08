@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        /* border: 2px solid grey; */
+        /*margin-left: 100px;*/
+      }
+      tr:nth-child(even) {
+        background-color: lightgray;
+      }
+      table {
+        margin: auto;
+        transform: translateY(50%);
+        border: 2px solid rgb(198, 197, 197);
+        /* border-collapse: collapse; */
+        background-color: white;
+        /* text-align: left; */
+        & td,th {
+          padding: 1em 2em;
+          padding-left: 2px;
+          border: 2px inset rgb(255, 249, 249);
+        }
+        & .red{
+            color: red;
+        }
+        & .green{
+            color: green;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Rank</th>
+        <th>Player Name</th>
+        <th>Ranking Points</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Rafal Nadal</td>
+        <td class="green">12390</td>
+        <td>Spain</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Roger Federer</td>
+        <td>7950</td>
+        <td>Switzerland</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Novak Djokovic</td>
+        <td>7880</td>
+        <td>Serbia</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>George Yang</td>
+        <td class="red">5000</td>
+        <td>China</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Peter Smith</td>
+        <td class="red">4000</td>
+        <td>Canada</td>
+      </tr>
+    </table>
+  </body>
+</html>

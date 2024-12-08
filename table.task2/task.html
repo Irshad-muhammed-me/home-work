@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 35%;
+        text-align: left;
+        margin-left: 32%;
+        margin: top 50px;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-left: 15px;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 100;
+      }
+      tr:nth-child(odd) {
+        background-color: lightskyblue;
+      }
+      tr:nth-child(1) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grocery Items Bill</h1>
+    <table>
+      <tr>
+        <th>Item Name</th>
+        <th style="width: 20%">Quantity</th>
+        <th style="width: 20%">Price</th>
+      </tr>
+      <tr>
+        <td>Potatoes</td>
+        <td style="text-align: center">51</td>
+        <td>$ 1.00</td>
+      </tr>
+      <tr>
+        <td>Nuts</td>
+        <td style="text-align: center">20</td>
+        <td>$5</td>
+      </tr>
+      <tr>
+        <td>Onions</td>
+        <td style="text-align: center">4</td>
+        <td>$3.00</td>
+      </tr>
+      <tr>
+        <td>Very Long Awkwardly Named Yet Still Delicious Item Here</td>
+        <td style="text-align: center">4</td>
+        <td>$3.00</td>
+      </tr>
+      <tr>
+        <td>Carrots</td>
+        <td style="text-align: center">12</td>
+        <td>$2.99</td>
+      </tr>
+      <tr>
+        <td colspan="2">Total Price</td>
+        <td>$33.79</td>
+      </tr>
+    </table>
+  </body>
+</html>
