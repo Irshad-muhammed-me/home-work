@@ -5,30 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: rgb(120, 155, 120);
+        }
         table,th,td{
-            border: 1px solid black;
+           
             border-collapse: collapse;
         }
         table{
+            width: 100%;
             margin: auto;
-            margin-top:10%;
+            margin-top:5%;
+            text-align: center;
         }
         th,td{
-            padding: 15px;
+            padding: 30px;
+        }
+        th{ 
+            background-image: linear-gradient(rgb(130, 26, 133), rgb(65, 65, 52));
+            font-weight: bold;
+        }
+        .text-color{
+            color: white;
+        }
+        tbody tr:nth-child(2) td:nth-child(5),
+        tbody tr:nth-child(5) td:nth-child(5)
+        {
+            background-color: green;
+        }
+        tbody tr:nth-child(3) td:nth-child(5),
+        tbody tr:nth-child(6) td:nth-child(5)
+        {
+            background-color:orange;
+        }
+        tbody tr:nth-child(4) td:nth-child(5)
+        {
+            background-color: red;
+        }
+        tbody tr:nth-child(2) td:nth-child(3),
+        tbody tr:nth-child(5) td:nth-child(3)
+        {
+            background-color: blue;
+        }
+        tbody tr:nth-child(3) td:nth-child(3)
+        {
+            background-color: purple;
+        }
+        tbody tr:nth-child(2) td:nth-child(6),
+        tbody tr:nth-child(5) td:nth-child(6)
+        {
+            background-color: yellow;
+        }
+        tbody tr:nth-child(4) td:nth-child(6)
+        {
+            background-color: gray;
+        }
+        tr:nth-child(even){
+          background-color: black;
+        }
+        tr:nth-child(odd){
+            background-color: white;
+        }
+        tr:hover{
+            
+            background-color:rgb(98, 98, 62)  ;
+        }
+        @media only screen and (min-width:600px) {
+            table{
+                width:80%;
+            }
         }
     </style>
 </head>
 <body>
-    <table>
+    <table style="width:90%;">
+        <colgroup>
+            <col span="3">
+            <col span="" style="visibility: collapse;">
+        </colgroup>
         <tr>
             <th>Employee ID</th>
             <th>Name</th>
-            <th>DIsignation</th>
+            <th>Designation</th>
             <th>Department</th>
             <th>Salary</th>
             <th>Experience(Years)</th>
         </tr>
-        <tr>
+        <tr class="text-color">
             <td>1</td>
             <td>Jhon Doe</td>
             <td>Manager</td>
@@ -37,14 +100,14 @@
             <td>12</td>
         </tr>
         <tr>
-            <td>2</td>
+            <td >2</td>
             <td>Jane Smith</td>
             <td>Senior Developer</td>
             <td>Development</td>
             <td>$65,000</td>
-            <td>2</td>
+            <td>8</td>
         </tr>
-        <tr>
+        <tr class="text-color">
             <td>3</td>
             <td>Emily Davis</td>
             <td>Junior Developer</td>
@@ -61,13 +124,13 @@
             <td>$90,000</td>
             <td>15</td>
         </tr>
-        <tr>
+        <tr class="text-color">
             <td>5</td>
             <td>Alex Carter</td>
             <td>Developer</td>
             <td>Development</td>
             <td>$50,000</td>
-            <td>5<td>
+            <td>5</tr>
         </tr>
     </table>
 </body>
