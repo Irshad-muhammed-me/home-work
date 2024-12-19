@@ -1,140 +1,180 @@
-  * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      nav {
-        width: 100%;
-        height: 70px;
-        background-color: #b7eafa;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow: hidden;
-      }
-      nav ul {
-        display: flex;
-        margin: 0;
-        padding: 10px;
-      }
-      nav ul li {
-        list-style: none;
-        display: flex;
-        padding: 10px;
-        background-color: rgb(47, 186, 214);
-        width: 100px;
-        justify-content: space-around;
-      }
-      .search {
-        background-color: rgb(216, 240, 232);
-        padding: 10px;
-        border-radius: 10px;
-      }
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #b7eafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  padding: 10px;
+  background-color: rgb(47, 186, 214);
+  margin: 0 5px;
+  border-radius: 5px;
+}
+.search {
+  background-color: rgb(216, 240, 232);
+  padding: 10px;
+  border-radius: 10px;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  background-color: black;
+  color: white;
+}
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.img {
+  width: 110px;
+  height: auto;
+  padding-bottom: 10px;
+}
+.head {
+  text-align: center;
+}
+.banner {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(75, 96, 89);
+  padding-top: 10px;
+  text-align: center;
+}
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.content-cards {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 20px;
+  padding: 20px;
+  background-color: #b7eafa;
+}
+.card {
+  border: 2px solid rgb(188, 162, 162);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: aliceblue;
+}
+.article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 48%;
+}
+button {
+  background-color: rgb(77, 73, 73);
+  border-radius: 5px;
+  padding: 7px;
+}
+.articles {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #b7eafa;
+}
+.footer3 {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+.footer-section {
+  padding: 10px;
+  text-align: center;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 10px;
+  color: white;
+}
+.list {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.head-h3 {
+  padding-left: 50px;
+}
+#list2 {
+  display: inline-block;
+  padding: 20px;
+}
+footer {
+  background-color: rgb(75, 96, 89);
+  font-weight: bolder;
+}
+.footer-section2 {
+  text-align: center;
+  padding-top: 15px;
+}
 
-      .link:hover {
-        background-color: black;
-        color: white;
-      }
-      .link {
-        color: white;
-      }
-      li:active {
-        color: yellow;
-      }
-      .img {
-        padding-bottom: 10px;
-        width: 110px;
-      }
-      .head {
-        text-align: center;
-      }
-      .banner {
-        width: 100%;
-        height: 150px;
-        background-color: rgb(75, 96, 89);
-        padding-top: 10px;
-      }
-      .image {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-      .content-cards {
-        padding-bottom: 0;
-        display: grid;
-        grid-template-columns: 32% 32% 32%;
-        gap: 20px;
-        align-items: center;
-        /* padding-left: 20px; */
-        padding: 20px;
-        background-color: #b7eafa;
-      }
-      .card {
-        border: 2px solid rgb(188, 162, 162);
-        border-radius: 20px;
-        text-align: center;
-        overflow: hidden;
-        border-style: outset;
-        padding: 20px;
-        background-color: aliceblue;
-      }
-      .article {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid black;
-        width: 48%;
-      }
-      button {
-        background-color: rgb(77, 73, 73);
-        border-radius: 5px;
-        padding: 7px;
-      }
-      .articles {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        width: 100%;
-      }
-      .footer3 {
-        width: 100%;
-        padding: 50px;
-        text-align: center;
-      }
-      .footer-section {
-        padding: 10px;
-        text-align: center;
-        padding-top: 15;
-      }
-      .footer-content {
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        gap: 10px;
-        color: white;
-      }
-      .list {
-        list-style: none;
-        text-decoration: none;
-        padding: 5px;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-      .head-h3 {
-        padding-left: 50px;
-      }
-      #list2 {
-        display: inline-block;
-        padding: 20px;
-      }
-      footer {
-        background-color: rgb(75, 96, 89);
-        font-weight: bolder;
-      }
-      .footer-section2 {
-        text-align: center;
-        padding-top: 15px;
-      }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: brown;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1;
+  }
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+  nav ul.show {
+    display: flex;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+  .banner p {
+    font-size: 18px;
+  }
+  .content-cards {
+    grid-template-columns: 1fr;
+  }
+  .articles {
+    flex-direction: column;
+  }
+  .article {
+    width: 100%;
+  }
+}

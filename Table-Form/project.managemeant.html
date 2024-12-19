@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        background-color: #7df9ff;
+        font-family: arial;
+        
+        
+      }
+      td,th{
+        padding: 15px;
+        
+      }
+      td{
+        font-weight: 550;
+      }
+      th{
+        font-size: large;
+      }
+      #name{
+        padding: 7px .5px;
+        
+      }
+
+      #assigned{
+        padding: 7px 20px;
+        text-align: left;
+    
+      }
+      #date{
+        padding: 5px 48px;
+        padding-left:5px;
+      }
+      #Edate{
+        padding: 5px 48px;
+        padding-left:5px;
+
+      }
+      #submit{
+        background-color:rgb(46, 252, 46) ;
+        border-style: none;
+        padding: 10px 15px;
+        border-radius: 3px;
+        color: white;
+        margin-left: 60px;
+        cursor: pointer;
+      }
+      #clear{
+        background-color:rgb(85, 85, 250) ;
+        border-style: none;
+        padding: 10px 18px;
+        border-radius: 3px;
+        color: white;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      
+
+    
+      
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">
+          <u> Prot ject Managemen</u>
+        </th>
+      </tr>
+      <tr>
+        <td><label for="name">Project Name</label></td>
+      <td><input  type="text" id="name" placeholder="project name" /></td>
+      </tr>
+      <tr>
+        <td><label for="assigned">Assigned</label></td>
+        <td><select  name="" id="assigned" >
+            <option value=""class="ipt" >Er Merry Petision </option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><label for="date">Start Date</label></td>
+        <td><input class="ipt" type="date" id="date"></td>
+      </tr>
+      <tr>
+        <td><label for="Edate">End Date</label></td>
+        <td><input class="ipt" type="date" id="Edate"></td>
+      </tr>
+      <tr>
+        <td><label for="radi" >Priority</label></td>
+        <td><input type="radio" id="radi" name="priority">High
+        <input type="radio" id="radi" name="priority">Average
+        <input type="radio" id="radi" name="priority">Low</td>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="description">Description</label></td>
+        <td><textarea name="" id="description" cols="30" rows="3"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Submit" id="submit">
+        <input type="submit" value="Clear" id="clear">
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border: 2px solid black;
+            background-color: #63dfa9e9;
+            border: inset black;
+        }
+        th{
+            width: 140px;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <caption>
+          Registation form
+        </caption>
+        <tr>
+          <th><label for="name">Enter your first name</label></th>
+          <td><input type="text" id="name" placeholder="Enter your first name" /></td>
+        </tr>
+        <tr>
+          <th><label for="lname">Enter your last name</label></th>
+          <td><input type="text" id="name"  placeholder="Enter your last name" /></td>
+        </tr>
+        <tr>
+          <th><label for="password">Enter your password</label></th>
+          <td><input type="password" id="password" placeholder="Enter your password" /></td>
+        </tr>
+        <tr>
+          <th><label for="re-password">ReEnter your password</label></th>
+          <td><input type="password" id="re-password" placeholder="ReEnter your password" /></td>
+        </tr>
+        <tr>
+          <th><label for="email">Enter your email</label></th>
+          <td><input type="email" id="email" placeholder="Enter your email" /></td>
+        </tr>
+        <tr>
+          <th><label for="number">Enter your mobile </label></th>
+          <td><input type="number" id="number" placeholder="Enter your mobile" /></td>
+        </tr>
+        <tr>
+          <th><label for="adress">Enter Your address</label></th>
+          <td>
+            <textarea name="" id="address" cols="20" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="gender">Select your gender</label></th>
+          <td>
+            Male<input type="radio" id="gender" name="gender" /> Female<input
+              type="radio"
+              id="gender"
+              name="gender"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="hobby">Select your hobbies</label></th>
+          <td>
+            hobby1 <input type="checkbox" id="hobby" /> hobby2
+            <input type="checkbox" id="hobby" /> hobby3
+            <input type="checkbox" id="hobby" />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="date">Select your DOB</label></th>
+          <td><input type="date" id="date" /></td>
+        </tr>
+        <tr>
+          <th><label for="county">Select your county</label></th>
+          <td>
+            <select name="" id="county">
+              <option value="">Select your county</option>
+              <option value="">India</option>
+              <option value="">USA</option>
+              <option value="">US</option>
+              <option value="">UK</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="file">Uploade your pic</label></th>
+          <td><input type="file" id="file" /></td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <input type="submit" value="Save My Data" />
+            <input type="submit" value="Reset Data" />
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
