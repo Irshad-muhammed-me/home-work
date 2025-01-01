@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        background-color: #572323;
+        text-align: center;
+        padding: 1.5vw;
+        /* position: fixed; */
+        
+      }
+      .head-1 {
+        color: #fff;
+      }
+      .para-1 {
+        font-size: large;
+        color: #fff;
+      }
+      .section-1 {
+        background-color: #dbb2b2;
+        text-align: left;
+        padding: 2vw;
+        margin: 2vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .section-2 {
+        background-color: #dbb2b2;
+        margin: 2vw;
+        padding: 1vw;   
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0.1vw;
+      }
+      .head-2 {
+        text-align: center;
+      }
+      li {
+        padding: 1vw;
+        background-color: #fff;
+        padding-left: 20px;
+      }
+      .section-3 {
+        text-align: center;
+        background-color: #572323;
+        color: #fff;
+        padding: 2vw;
+
+      }
+      input {
+        padding: 1vw 75vw;
+        padding-left: 5vw;
+      }
+      textarea {
+        padding: 1vw 75vw;
+        padding-left: 5vw;
+      }
+      footer {
+        background-color: #572323;
+        text-align: center;
+        padding: 2vw 3vw;
+        color: #fff;
+      }
+      button{
+         background-color: #cf4c4c;
+            color: white;
+            padding: 10px 40px;
+            border: none;
+            cursor: pointer;
+            margin-top: 1vw;
+      }
+          form button:hover {
+            background-color: #555;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="head-1">Muhammed Irshad</h1>
+      <p class="para-1">Full Stack Developer</p>
+    </header>
+
+    <section class="section-1">
+      <h1>About Me</h1>
+      <p>
+        Hello! My name is Muhammed Irshad, and I am passionate about crafting
+        beautiful and functional websites. With a knack for coding and a love
+        for design, I enjoy turning ideas into digital experiences.
+      </p>
+    </section>
+    <section class="section-2">
+      <h2 class="head-2">Hobbies & Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <br />
+        <li>CSS</li>
+        <br />
+        <li>Java Script</li>
+        <br />
+        <li>Hiking & Outdoor Adventures</li>
+        <br />
+        <li>Whaching Movies</li>
+        <br />
+        <li>Travaling</li>
+        <br />
+      </ul>
+    </section>
+    <section class="section-3">
+      <h2>Contact Me</h2>
+      <form action="">
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          placeholder=" Your Name"
+          required
+          autocomplete="on"
+        />
+        <br /><br />
+        <label for="email"></label>
+        <input type="text" id="email" placeholder=" Your Email" required />
+        <br /><br />
+        <label for="message"></label>
+        <textarea
+          name=""
+          id="message"
+          cols=""
+          rows=""
+          placeholder="Your Message"
+        ></textarea>
+        <button>Send</button>
+      </form>
+    </section>
+  </body>
+</html>

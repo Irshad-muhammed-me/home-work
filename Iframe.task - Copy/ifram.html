@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: sans-serif;
+      }
+      li {
+        list-style: none;
+        display: inline;
+      }
+      a {
+        color: white;
+        padding: 14px 10px;
+      }
+      a:hover {
+        background-color: burlywood;
+        color: blue;
+      }
+      .div-a {
+        background-color: black;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-a">
+      <ul>
+        <li><a href="index.html" target="iframe_a">Home</a></li>
+        <li><a href="about.html" target="iframe_a">About</a></li>
+        <li><a href="contact.html" target="iframe_a">Contact</a></li>
+      </ul>
+    </div>
+    <iframe
+      src="index.html"
+      frameborder="2px"
+      name="iframe_a"
+      height="500px"
+      width="100%"
+      style="border: 2px solid black"
+    ></iframe>
+  </body>
+</html>

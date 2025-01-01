@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Blog Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        article {
+            flex: 0 0 70%;
+            background-color: white;
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            flex: 0 0 25%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .post {
+            margin-bottom: 20px;
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post .date {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <nav>
+        <a href="#tech">Tech</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#food">Food</a>
+        <a href="#travel">Travel</a>
+    </nav>
+
+    <main>
+        <section>
+            <article class="post">
+                <h2>First Blog Post</h2>
+                <p class="date">Posted on December 24, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+            </article>
+
+            <article class="post">
+                <h2>Second Blog Post</h2>
+                <p class="date">Posted on December 20, 2024</p>
+                <p>Nulla quam felis, euismod in, adipiscing vitae, gravida venenatis, risus. Fusce fermentum. Pellentesque malesuada nulla a mi molestie, ac condimentum urna vehicula. Cras convallis urna at dui venenatis, a tempus lectus porttitor.</p>
+            </article>
+
+            <article class="post">
+                <h2>Third Blog Post</h2>
+                <p class="date">Posted on December 18, 2024</p>
+                <p>Proin faucibus arcu quis ante. Integer ut mauris eu libero pretium lacinia. Vivamus eu orci. In hac habitasse platea dictumst. Nulla aliquet, magna ac eleifend laoreet, lectus arcu pharetra augue, id posuere enim neque at lectus.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>About Me</h3>
+            <p>Hello! I'm a passionate blogger who loves writing about tech, lifestyle, food, and travel. Join me on my journey as I explore new ideas and share my experiences!</p>
+
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#lifestyle">Lifestyle</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#travel">Travel</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>My Blog &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
